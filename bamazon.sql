@@ -1,4 +1,4 @@
-/* Creating the datbase bamazon */
+/* Creating and utilizing the datbase bamazon */
 DROP DATABASE IF EXISTS bamazon_db;
 CREATE DATABASE bamazon_db;
 
@@ -14,7 +14,7 @@ CREATE TABLE products (
     PRIMARY KEY(item_id)
 );
 
-/* Create content to populate table/'s rows */
+/* Create content to populate into 'products' table/'s rows */
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ("Playstation 5", "Electronics", 349.99, 20);
@@ -41,10 +41,10 @@ INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ("Car Wash", "Automotive", 5.50, 16);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("Lzol", "Health&", 0., 80);
+VALUES ("Tea Tree oil", "Health & Beauty", 8.99, 80);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("H", "Produce", 1.50, 30);
+VALUES ("Body Wash", "Health & Beauty", 5.99, 30);
 
 
 
