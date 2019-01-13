@@ -39,16 +39,16 @@ connection.query('SELECT * FROM `products`', function (err, results, fields) {
     }]).then(function(answer) {
       for (var i=0; i<results.length; i++) {
         if (results[i].item_id === parseInt(answer.itemId)) {
-          // If order quantity is too high, notify user of insufficient stock
+          // If order quantity is too much, let user know "insufficient stock!"
           if (results[i].stock_quantity < parseInt(answer.quantity)) {
             console.log("Insufficient stock!");
             buyPrompt();
           } else {
-            // Calculate order total and remaining stock
+            // Calculate total and remaining stock
             let total = parseFloat(answer.quantity*results[i].price).toFixed(2);
             let newStock = results[i].stock_quantity - answer.quantity;
 
-            // Construct query to update stock
+            // Construct for the query to update stock
             const updateStock = 'UPDATE `products` SET `stock_quantity` = ' + newStock + ' WHERE `item_id` = ' + answer.itemId
             connection.query(updateStock, function(err, result) {
               if (err) {
