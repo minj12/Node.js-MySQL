@@ -1,6 +1,6 @@
 # Node.js-MySQL
 
-## Bamazon
+## Challenge 1: Bamazon
 My goal is to make an interface that works swhere user buys items based on what they see in the catalogue using node based client.
 
 ## Deployment
@@ -11,6 +11,13 @@ My goal is to make an interface that works swhere user buys items based on what 
 4.  cd Bamazon
 5.  node bamazonCustomer.js
 6.  Run client and follow prompt
+
+## Tech  
+
+* jQuery
+* Node.js 
+* MySQL 
+
 
 
 
