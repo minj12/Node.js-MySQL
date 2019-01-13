@@ -2,7 +2,7 @@
 var mysql = require('mysql');
 var inquirer = require('inquirer');
 
-// Connect to database
+// Connect to MySQL database
 const connection = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
@@ -58,7 +58,7 @@ connection.query('SELECT * FROM `products`', function (err, results, fields) {
               }
             });
 
-            // Notify user of successful purchase
+            // Tells user of an successful purchase
             console.log("You have purchased " + answer.quantity + " " + results[i].product_name);
             console.log("Your order total is " + total);
           }
