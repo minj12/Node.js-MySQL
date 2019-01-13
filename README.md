@@ -3,7 +3,8 @@
 ## Bamazon
 My goal is to make an interface that works swhere user buys items based on what they see in the catalogue using node based client.
 
-### Deployment
+## Deployment
+
 * Clone the repo
 * npm install
 * Access terminal
