@@ -12,6 +12,8 @@ My goal is to make an interface that works swhere user buys items based on what 
 5.  node bamazonCustomer.js
 6.  Run client and follow prompt
 
+
+
 ## Tech  
 
 * jQuery
