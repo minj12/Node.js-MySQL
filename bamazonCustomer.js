@@ -10,6 +10,7 @@ const connection = mysql.createConnection({
   database : 'bamazon_db'
 });
 
+//Fix connection error
 connection.connect(function(err) {
   if (err) {
     console.error('error connecting: ' + err.stack);
@@ -58,7 +59,7 @@ connection.query('SELECT * FROM `products`', function (err, results, fields) {
               }
             });
 
-            // Tells user of an successful purchase
+            // Tells user of an successful purchase and calculated total
             console.log("You have purchased " + answer.quantity + " " + results[i].product_name);
             console.log("Your order total is " + total);
           }
